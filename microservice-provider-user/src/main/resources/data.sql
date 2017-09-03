@@ -1,0 +1,7 @@
+INSERT INTO USER (id,username,name,age,balance) VALUES (1,'user1','张三','20',100.00)
+INSERT INTO USER (id,username,name,age,balance) VALUES (2,'user2','李四','37',200.00)
+INSERT INTO USER (id,username,name,age,balance) VALUES (3,'user3','王五','19',100.00)
+INSERT INTO USER (id,username,name,age,balance) VALUES (4,'user4','二流','9',100.00)
+INSERT INTO USER (id,username,name,age,balance) VALUES (5,'user5','三七','56',600.00)
+INSERT INTO USER (id,username,name,age,balance) VALUES (6,'user6','四八','24',78.00)
+INSERT INTO USER (id,username,name,age,balance) VALUES (7,'user7','张飞','21',19.00)
