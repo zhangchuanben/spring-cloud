@@ -1,4 +1,4 @@
-package com.ben.config;
+package com.ben.movie;
 
 import com.netflix.client.config.IClientConfig;
 import com.netflix.loadbalancer.IRule;
@@ -13,6 +13,7 @@ import org.springframework.context.annotation.Configuration;
  * Created by chuanben on 2017/9/3.
  */
 @Configuration
+@ExcludeFromComponentScan
 public class TestConfiguration {
     @Bean
     @ConditionalOnMissingBean
