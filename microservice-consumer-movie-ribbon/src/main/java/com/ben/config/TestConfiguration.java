@@ -14,11 +14,9 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class TestConfiguration {
-    @Autowired
-    private IClientConfig config;
     @Bean
     @ConditionalOnMissingBean
-    public IRule ribbonRule(IClientConfig config) {
+    public IRule ribbonRule() {
        return new RandomRule();
     }
 }
