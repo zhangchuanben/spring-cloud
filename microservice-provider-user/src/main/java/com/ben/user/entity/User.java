@@ -10,6 +10,14 @@ import java.math.BigDecimal;
 @Entity
 public class User implements Serializable{
 
+    public User(Long id, String username) {
+        this.id = id;
+        this.username = username;
+    }
+
+    public User() {
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
