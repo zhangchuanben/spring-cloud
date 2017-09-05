@@ -22,4 +22,9 @@ public class MovieController {
     public User userPost(User user) {
         return userFeignClient.postUser(user);
     }
+
+    @GetMapping("/test-get")
+    public User testGet(User user) {
+        return this.userFeignClient.getUser(user);
+    }
 }

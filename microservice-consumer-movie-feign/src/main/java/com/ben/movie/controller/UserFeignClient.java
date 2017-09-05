@@ -14,4 +14,7 @@ public interface UserFeignClient {
     User findById(@PathVariable("id") Long id);
     @RequestMapping(method = RequestMethod.POST, value = "/user")
     User postUser(@RequestBody User user);
+    // 该请求不会成功，只要参数是复杂对象，即使指定了是GET方法，feign依然会以POST方法进行发送请求。可能是我没找到相应的注解或使用方法错误。
+    @RequestMapping(value = "/get-user", method = RequestMethod.GET)
+    public User getUser(User user);
 }
